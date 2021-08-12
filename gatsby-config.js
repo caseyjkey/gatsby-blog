@@ -1,9 +1,13 @@
+const siteMetadata = {
+    title: `Casey's Code Blog`,
+    description: `My coding blog for documenting my coding journey`,
+
+}
+
 module.exports = {
-    siteMetadata: {
-	title: `Casey's Code Blog`,
-	description: `My coding blog for documenting my coding journey`,
-    },
+    siteMetadata: siteMetadata,
     plugins: [
+	`gatsby-plugin-styled-components`,
 	{
 	    resolve: `gatsby-plugin-mdx`,
 	    options: {
